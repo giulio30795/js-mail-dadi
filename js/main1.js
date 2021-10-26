@@ -1,14 +1,9 @@
-// - crea una lista contenente almeno 3 indirizzi email
-// - chiedi all’utente la sua email,
-// - controlla che sia nella lista di chi può accedere (lista creata sopra al punto 1),
-// - stampa un messaggio appropriato sull’esito del controllo.
-
+// Dichiarazione Variabili
 const message = document.querySelector('.message')
-
 const mail = ['pippo@gmail.com', 'franco@gmail.com', 'giovanni@gmail.com']
-
 const utente = prompt('Inserire Mail')
 
+// Controllo Campo Vuoto
 if(utente === ''){
     alert('Inserire un nome valido')
 } else {
@@ -21,9 +16,10 @@ if(utente === ''){
             break;
         } 
     }
+    // Output
         if (utenteTrovato) {
-        message.innerHTML = 'Utente Valido';
+        message.innerHTML = 'Utente Valido, accesso Autorizzato';
     } else {
-    message.innerHTML = 'Utente NON Valido';
+    message.innerHTML = 'Utente NON Valido, accesso negato';
     }
 }
