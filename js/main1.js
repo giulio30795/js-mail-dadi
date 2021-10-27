@@ -1,7 +1,7 @@
 // Dichiarazione Variabili
 const message = document.querySelector('.message')
-const mail = ['pippo@gmail.com', 'franco@gmail.com', 'giovanni@gmail.com']
-const utente = prompt('Inserire Mail')
+const mail = ['girgioo@gmail.com', 'francesco@gmail.com', 'giovanni@gmail.com']
+const utente = prompt('Inserire Mail').trim().toLocaleLowerCase();
 
 // Controllo Campo Vuoto
 if(utente === ''){
@@ -17,8 +17,8 @@ if(utente === ''){
         } 
     }
     // Output
-        if (utenteTrovato) {
-        message.innerHTML = 'Utente Valido, accesso Autorizzato';
+    if (utenteTrovato) {
+    message.innerHTML = 'Utente Valido, accesso Autorizzato';
     } else {
     message.innerHTML = 'Utente NON Valido, accesso negato';
     }
