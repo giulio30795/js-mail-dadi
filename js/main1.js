@@ -1,7 +1,7 @@
 // Dichiarazione Variabili
 const message = document.querySelector('.message')
 const mail = ['girgioo@gmail.com', 'francesco@gmail.com', 'giovanni@gmail.com']
-const utente = prompt('Inserire Mail').trim().toLocaleLowerCase();
+const utente = prompt('Inserire Mail').trim().toLowerCase();
 
 // Controllo Campo Vuoto
 if(utente === ''){
